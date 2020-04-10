@@ -1,5 +1,5 @@
 {
-  "name": "tags-server",
+  "name": "devices-server",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Concise Constructs LLC",

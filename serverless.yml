@@ -16,7 +16,7 @@ custom:
   accessKeyId: ${ssm:concise-accessKeyId~true}
   secretAccessKey: ${ssm:concise-secretAccessKey~true}
   region: ${ssm:concise-region~true}
-  model: 'tags'
+  model: 'devices'
   createdAt: 'createdAt'
   updatedAt: 'updatedAt'
   indexA: ''
@@ -182,7 +182,7 @@ functions:
 
 
   update:
-    timeout: 180 # optional, in seconds, default is 6
+    timeout: 30 # optional, in seconds, default is 6
     handler: ${self:custom.pathToHandler}/update.handler
     package:
       include:
@@ -197,7 +197,7 @@ functions:
 
 
   delete:
-    timeout: 180 # optional, in seconds, default is 6
+    timeout: 30 # optional, in seconds, default is 6
     handler: ${self:custom.pathToHandler}/delete.handler
     package:
       include:
