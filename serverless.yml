@@ -10,7 +10,7 @@ provider:
   environment: ${self:custom.environments.${opt:stage, 'DEV'}}
 
 custom:
-  saasName: 'qa'
+  saasName: 'iqqa'
   pathToHandler: "compiled/src"
   pathToJSFile: "src"
   accessKeyId: ${ssm:concise-accessKeyId~true}
